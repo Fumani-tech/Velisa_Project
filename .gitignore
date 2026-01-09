@@ -43,3 +43,12 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# -------------------------------
+pyproject.toml
+# -------------------------------
+uv.lock
+
+.python-version
+
+.gitignore
