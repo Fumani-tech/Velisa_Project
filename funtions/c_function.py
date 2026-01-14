@@ -1,5 +1,8 @@
 #Write a function divisible (num1, num2) that returns True if num1 is divisible by num2 otherwise False
 
+from itertools import count
+
+
 def divisible(num1, num2):
     if num1 % num2 == 0:
         return True
@@ -103,5 +106,25 @@ print(contains("SORRY", "or"))             # True
 print(contains("tangent", "gem"))          # False
 print(contains("clock", "ok"))             # False
 
+#Write a function reverse_string(text) that returns the reversed string.
+
+def reverse_string(s):
+	return s[::-1]
+print(reverse_string("hello"))   # olleh
+print(reverse_string("Python"))  # nohtyP
 
 
+#Write `count_vowels(text)`
+
+#Return how many vowels are in the string.
+
+def count_vowels(text):
+    vowels = "a", "e", "i", "o", "u" 
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+print(count_vowels("hello"))        # 2
+print(count_vowels("Programming"))  # 3
