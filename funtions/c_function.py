@@ -128,3 +128,28 @@ def count_vowels(text):
 
 print(count_vowels("hello"))        # 2
 print(count_vowels("Programming"))  # 3
+
+
+
+#Write a function that checks if a string is a **palindrome** (same forward & backward).
+
+#Ignore spaces and capitalization.
+def is_palindrome(text):
+	text2 = text.replace(" ", "")
+	return text == text2[::-1]
+
+print(is_palindrome("level"))          # True
+print(is_palindrome("Race car"))       # True
+print(is_palindrome("python"))         # False
+
+
+#Write sum_upto(n)
+#Return the sum of numbers from 1 → n.
+
+def sum_upto(n):
+	s = 0
+	for i in range(1, n+1):
+		s += i
+	return s
+print(sum_upto(5))   # 15
+print(sum_upto(10))  # 55
