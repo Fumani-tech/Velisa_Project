@@ -1,8 +1,8 @@
 #B_nesting_loops
 # Write a function `print2d(matrix)` that accepts a 2D list and prints all inner elements.
 
-def print2d(array1):
-    for row in array1:
+def print2d(matrix):
+    for row in matrix:
         for item in row:
             print(item)
 
