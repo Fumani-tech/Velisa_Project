@@ -6,14 +6,16 @@
 
 def funny_phrase(sentence):
     list1 = sentence.split(' ')
-    ans_list = []
+    ans_list = ''
     for i in range (len(list1)):
         if i % 2 == 0 :
-            ans_list.append(list1[i])
+            ans_list += list1[i] + ' '
         else:
             double_word = double_vowel(list1[i])
-            ans_list.append(double_word)
-    return ' '.join(ans_list)
+            ans_list += double_word + ' '
+    return ans_list
+
+
 
 def double_vowel(string):
     ans_str = ''
